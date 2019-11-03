@@ -5,23 +5,17 @@
 
 1. [Introduction](#introduction)
 2. [Hardware](#hardware)
-3. [Software](#software)
-4. [References](#references)
+3. [References](#references)
 
 
 ## Introduction
 
-TBD
+Lab01: Blink an onboard LED - our first project :).
 
 
 ## Hardware
 
-TBD
-
-
-## Software
-
-TBD
+ATmega328P
 
 
 ## References
