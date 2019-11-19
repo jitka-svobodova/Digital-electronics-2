@@ -6,11 +6,11 @@ TARGET    = DEMO
 MCU       = atmega328p
 MCU_DUDE  = m328p
 F_CPU     = 16000000
-USBPORT   = /dev/ttyUSB0
+USBPORT   = com8
 
 ## AVR 8-bit toolchain
 # https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers
-PREFIX = /opt/avr8-gnu-toolchain-linux_x86
+PREFIX = c:/avr-gcc-9.2.0-x64-mingw
 
 
 
@@ -21,8 +21,8 @@ PREFIX = /opt/avr8-gnu-toolchain-linux_x86
 # Define variables used as names of programs in built-in rules
 export LC_ALL=C
 BINDIR  = $(PREFIX)/bin
-CC      = $(BINDIR)/avr-gcc -fdiagnostics-color=always
-AS      = $(BINDIR)/avr-gcc -fdiagnostics-color=always -x assembler-with-cpp
+CC      = $(BINDIR)/avr-gcc
+AS      = $(BINDIR)/avr-gcc -x assembler-with-cpp
 OBJDUMP = $(BINDIR)/avr-objdump
 OBJCOPY = $(BINDIR)/avr-objcopy
 SIZE    = $(BINDIR)/avr-size
