@@ -1,5 +1,5 @@
 
-# TWI SCANNER
+# TWI Scanner
 
 #### Table of Contents
 
