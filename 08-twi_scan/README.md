@@ -11,8 +11,7 @@
 ## Introduction
 
 Lab08: TWI Scanner: Goes through the TWI address space and prints 'OK' if the device has been detected at the given address.
-![putty screenshot](https://github.com/jitka-svobodova/Digital-electronics-2/blob/master/08-twi_scan/twi_scanner.png)
-<img src="https://github.com/jitka-svobodova/Digital-electronics-2/blob/master/08-twi_scan/twi_scanner.png" width="150">
+<img src="https://github.com/jitka-svobodova/Digital-electronics-2/blob/master/08-twi_scan/twi_scanner.png" width="500">
 
 
 ## Hardware
