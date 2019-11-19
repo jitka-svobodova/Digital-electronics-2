@@ -17,7 +17,7 @@ Lab08: TWI Scanner: Goes through the TWI address space and prints 'OK' if the de
 
 ## Hardware
 
-ATmega328P
+ATmega328P, DHT12, DS3231
 
 
 ## References
