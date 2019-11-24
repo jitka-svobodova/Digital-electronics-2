@@ -1,5 +1,5 @@
 
-# Demo Project
+# Pulses burst function
 
 #### Table of Contents
 
