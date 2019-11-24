@@ -1,12 +1,12 @@
 /***********************************************************************
  * 
- * Implementation of LFSR-based (Linear Feedback Shift Register) 
- * pseudo-random generator in AVR assembly.
+ * Generator of desired number of pulses
  * ATmega328P (Arduino Uno), 16 MHz, AVR 8-bit Toolchain 3.6.2
  *
  * Copyright (c) 2017-2019 Tomas Fryza
  * Dept. of Radio Electronics, Brno University of Technology, Czechia
  * This work is licensed under the terms of the MIT license.
+ * Updated by Jitka Svobodova
  * 
  **********************************************************************/
 
@@ -27,8 +27,6 @@
 extern uint8_t burst_asm(uint8_t current);
 
 /* Main --------------------------------------------------------------*/
-/* Generate a sequence of LFSR preudo-random values using 4- and 8-bit
- * structure. */
 int main(void)
 {
     // enable the PB5 output
