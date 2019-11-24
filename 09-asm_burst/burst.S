@@ -22,7 +22,7 @@
 
 ;* Functions -----------------------------------------------------------
 ;* Pulse burst
-;* Input:  r24 - Current value of shift register
+;* Input:  r24 - initialized with the desired number of pulses
 .global burst_asm
 burst_asm:
     loop: dec input  ; decrease input by 1 (sets Z='1', if input value is zero)
