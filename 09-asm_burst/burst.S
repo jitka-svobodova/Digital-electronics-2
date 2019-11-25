@@ -25,8 +25,8 @@
 ;* Input:  r24 - initialized with the desired number of pulses
 .global burst_asm
 burst_asm:
-    loop: dec input  ; decrease input by 1 (sets Z='1', if input value is zero)
-    sbi PORTB, 5     ; set bit PB5 to '1'
-    cbi PORTB, 5     ; reset bit PB5 to '0'
-    brne loop        ; if Z=='0', go to 'loop'
-    ret              ; return from subroutine
+sbi PORTB, 5     ; set bit PB5 to '1'
+cbi PORTB, 5     ; reset bit PB5 to '0'
+dec input        ; decrease input by 1 (sets Z='1', if input value is zero)
+brne burst_asm   ; if Z=='0', go to beginning
+ret              ; return from subroutine
